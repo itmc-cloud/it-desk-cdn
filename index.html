@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Icon Link Example</title>
+  <link rel="stylesheet" href="css/v1.0/floatingIcon.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+  <h1>Welcome to the Floating Icon CDN Page!</h1>
+  <p>This page demonstrates how to use the floating icon feature and provides instructions for implementation.</p>
+
+  <h2>Demo</h2>
+  <p>Below is a live demo of the floating icon:</p>
+
+  <script src="js/v1.0/floatingIcon.js"></script> <!-- Link to the JavaScript file -->
+  <script>
+    // Use the floating icon with a link
+    createFloatingIcon({
+      icon: "🔗",
+      position: "bottom-left",
+      tooltip: "Go to Google",
+      link: "https://www.google.com"
+    });
+  </script>
+
+  <h2>How to Use the Floating Icon</h2>
+  <p>Follow these steps to implement the floating icon on your webpage:</p>
+  <ol>
+    <li>
+      Include the CSS file in the `<head>` section of your HTML:
+      <pre><code>&lt;link rel="stylesheet" href="css/v1.0/floatingIcon.css"&gt;</code></pre>
+    </li>
+    <li>
+      Include the JavaScript file before the closing `<body>` tag:
+      <pre><code>&lt;script src="js/v1.0/floatingIcon.js"&gt;&lt;/script&gt;</code></pre>
+    </li>
+    <li>
+      Call the `createFloatingIcon` function in your script with the desired options:
+      <pre><code>
+createFloatingIcon({
+  icon: "🔗", // The icon to display
+  position: "bottom-left", // Position: bottom-left, bottom-right, top-left, or top-right
+  tooltip: "Go to Google", // Tooltip text
+  link: "https://www.google.com" // URL to open when clicked
+});
+      </code></pre>
+    </li>
+  </ol>
+
+  <h2>Options</h2>
+  <p>The `createFloatingIcon` function accepts the following options:</p>
+  <ul>
+    <li><strong>icon</strong>: The emoji or text to display as the icon (default: ❓).</li>
+    <li><strong>position</strong>: The position of the icon on the screen. Options: `bottom-right`, `bottom-left`, `top-right`, `top-left` (default: `bottom-right`).</li>
+    <li><strong>link</strong>: The URL to open when the icon is clicked. If not provided, an alert will be shown.</li>
+    <li><strong>tooltip</strong>: The text to display when hovering over the icon (default: "Click me!").</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>Here’s an example of how to use the floating icon:</p>
+  <pre><code>
+&lt;script&gt;
+  createFloatingIcon({
+    icon: "📧",
+    position: "top-right",
+    tooltip: "Contact Us",
+    link: "mailto:support@example.com"
+  });
+&lt;/script&gt;
+  </code></pre>
+
+  <h2>Download</h2>
+  <p>You can download the CSS and JavaScript files from the following paths:</p>
+  <ul>
+    <li><a href="css/v1.0/floatingIcon.css" download>floatingIcon.css</a></li>
+    <li><a href="js/v1.0/floatingIcon.js" download>floatingIcon.js</a></li>
+  </ul>
+</body>
+</html>
